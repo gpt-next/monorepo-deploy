@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test2-service
+  labels:
+    app.kubernetes.io/name: test2-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: test2-service
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: test2-service
+    spec:
+      imagePullSecrets:
+        - name: docker-pull-secret
+      containers:
+        - name: example-service
+          image: ghcr.io/gpt-next/monorepo/test2:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 4000
