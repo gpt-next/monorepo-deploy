@@ -5,3 +5,11 @@ namespace: dev-monorepo
 resources:
   - ../../base
   - docker-pull-secret.yaml
+
+images:
+  - name: test
+    newName: ghcr.io/gpt-next/monorepo/test
+    newTag: latest
+  - name: test2
+    newName: ghcr.io/gpt-next/monorepo/test2
+    newTag: latest
