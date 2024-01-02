@@ -18,7 +18,7 @@ spec:
         - name: docker-pull-secret
       containers:
         - name: example-service
-          image: ghcr.io/gpt-next/monorepo/test2
+          image: ghcr.io/gpt-next/monorepo/test2:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 4000
