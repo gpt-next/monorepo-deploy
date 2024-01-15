@@ -22,3 +22,4 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 4000
+      revisionHistoryLimit: 2
