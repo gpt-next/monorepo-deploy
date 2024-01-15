@@ -4,3 +4,8 @@ namespace: uat-monorepo
 resources:
   - ../../base
   - docker-pull-secret.yaml
+
+- name: ghcr.io/gpt-next/monorepo/test
+  newTag: 1.0.0
+- name: ghcr.io/gpt-next/monorepo/test2
+  newTag: 1.0.0
