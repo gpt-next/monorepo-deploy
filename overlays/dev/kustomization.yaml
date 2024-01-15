@@ -4,3 +4,8 @@ namespace: dev-monorepo
 resources:
   - ../../base
   - docker-pull-secret.yaml
+images:
+  - name: ghcr.io/gpt-next/monorepo/test
+    newTag: sha256:323f7ead7a0ead9b37362874fc6957064d9dadac1858c09fe3e4888665d6a4f5
+  - name: ghcr.io/gpt-next/monorepo/test2
+    newTag: sha256:b111668f98ad0649fc376525429e5c75bc44dc4e9e723308590fdf5331e9a450
