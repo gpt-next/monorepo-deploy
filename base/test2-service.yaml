@@ -6,6 +6,7 @@ metadata:
     app.kubernetes.io/name: test2-service
 spec:
   replicas: 1
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app.kubernetes.io/name: test2-service
@@ -22,4 +23,3 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 4000
-      revisionHistoryLimit: 2
