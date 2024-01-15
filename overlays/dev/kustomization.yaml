@@ -6,6 +6,6 @@ resources:
 - docker-pull-secret.yaml
 images:
 - name: ghcr.io/gpt-next/monorepo/test
-  newTag: latest
+  newTag: eeca96063627d0b719c76394e5d29a3aa646907e
 - name: ghcr.io/gpt-next/monorepo/test2
-  newTag: latest
+  newTag: eeca96063627d0b719c76394e5d29a3aa646907e
