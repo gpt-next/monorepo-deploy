@@ -2,10 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: dev-monorepo
 resources:
-  - ../../base
-  - docker-pull-secret.yaml
+- ../../base
+- docker-pull-secret.yaml
 images:
-  - name: ghcr.io/gpt-next/monorepo/test
-    newTag: latest
-  - name: ghcr.io/gpt-next/monorepo/test2
-    newTag: latest
+- name: ghcr.io/gpt-next/monorepo/test
+  newTag: latest
+- name: ghcr.io/gpt-next/monorepo/test2
+  newTag: latest
